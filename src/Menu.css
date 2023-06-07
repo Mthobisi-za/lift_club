@@ -1,7 +1,7 @@
 .menu {
     background-color: #FF735C;
     width: 100%;
-    height: 5vw;
+    min-height: 5vw;
     display: grid;
     align-items: center;
     justify-content: space-between;
@@ -24,4 +24,10 @@
 .right_menu .link_menu {
     color: #1A2E35;
     font-weight: bold
+}
+
+@media (max-width:720px) {
+    .menu {
+        grid-template-columns: 20% 70%!important;
+    }
 }
